@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-margin-bottom: 128px;
+
     .container {
         margin: 0 4%;
 
@@ -11,7 +11,7 @@ margin-bottom: 128px;
             .itemSuggestion {
                 margin-top:16px;
                 color: #000000B3;
-                font-size: 20px;
+                font-size: 22px;
                 font-weight: bold;
             }
 
@@ -23,11 +23,31 @@ margin-bottom: 128px;
         .listProduct {
             overflow-y: auto;
             max-height: 500px;
-            margin-bottom: 128px;
+
+        }
+    }
+
+    @media (max-width:700px) {
+
+        .container .listProduct {
+            padding-bottom: 60px;
+
+            .listProductItem {
+                margin: 0 22px;
+            }
+        }
+
+    }
+
+    @media (min-width:701px) {
+
+        .container .listProduct {
+            padding-bottom: 60px;
 
             .listProductItem {
                 margin: 0 40px;
             }
         }
+
     }
 `;

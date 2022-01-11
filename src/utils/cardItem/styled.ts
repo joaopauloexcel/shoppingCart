@@ -8,7 +8,7 @@ export const Container = styled.div`
     order: 1px solid #00000026;
 
     .cardItem {
-        width: 300px;
+        width: 250px;
         min-height: 320px;
         display: flex;
         flex-wrap:wrap;
@@ -20,17 +20,21 @@ export const Container = styled.div`
         border: 1px solid #00000026;
         margin:10px;
         border-radius: 14px;
+        padding: 8px 16px;
 
-        .image {
-            height: 180px;
-            width: auto;
-            margin-bottom: 16px;
+        .unset-img {
+            width: 100%;
+            height: 175px;
+            display: flex;
+            justify-content: center;
         }
 
         .title {
-            height: 20px;
+            height: 64px;
             color: #000000B3;
             font-size: 16px;
+            text-align: center;
+            margin-top: 16px;
         }
 
         .price {

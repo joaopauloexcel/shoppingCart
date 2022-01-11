@@ -17,7 +17,7 @@ export const Container = styled.div`
         justify-content: space-between;
         flex-direction: row;
         align-items: center;
-
+        
         .item {
             margin:8px 0;
             cursor: pointer;
@@ -39,7 +39,7 @@ export const Container = styled.div`
 
     @media (min-width:701px) {
         .footer {
-            margin: 0 35%;
+            margin: 10px 35%;
         }
 
     }

@@ -33,7 +33,7 @@ export default function MenuNav() {
           </Link>         
         </div>
         <div className={`item ${indexActive === 3 && 'active'}`} onClick={() => setIndexActive(3)}>  
-          <Link href={{pathname: "/home"}}>
+          <Link href={{pathname: "/accessories"}}>
             <a><Image src={Acessorios} alt='' /> acessórios</a> 
           </Link>        
         </div>

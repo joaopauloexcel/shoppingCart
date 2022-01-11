@@ -3,6 +3,10 @@ import Header from "../utils/header"
 import { ThemeProvider } from 'styled-components'
 import GlobalStyle from "../../styles/styled";
 import MenuNav from "../utils/menuNav";
+import "nprogress/nprogress.css";
+import dynamic from 'next/dynamic';
+
+const ProgressBar = dynamic(() => import('../utils/ProgessBar'), { ssr: false });
 
 const theme = {
   colors: {
@@ -19,7 +23,9 @@ function MyApp({ Component, pageProps }) {
         <MenuNav/>
           <Component {...pageProps} />
         <Footer/>
+        <ProgressBar/>
       </ThemeProvider>
+      
     </>);
 }
 

@@ -9,10 +9,11 @@ export const Container = styled.div`
     position: relative;
     z-index: 99;
     top:0px;
+    padding: 0 8px;
 
     .image {
         padding-top: 24px;
-        margin-left: 10%;
+        margin-left: 7%;
     }
 
 `;
